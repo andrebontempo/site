@@ -1,56 +1,73 @@
-<div class="text-center mb-5">
-  <h1 class="display-4 mb-3">Bem-vindo(a) à Minha Empresa de TI!</h1>
-  <p class="lead mb-4">Integração, automação e consultoria em tecnologia.</p>
-  <a href="#servicos" class="btn btn-primary btn-lg">Conheça nossos serviços</a>
-</div>
+<!-- Hero Section -->
+<section id="hero" class="text-center py-5 mt-4">
+  <h1 class="display-4 fw-bold text-gradient mb-3">
+    BonTech - Helpdesk • Serviços • Automação em TI
+  </h1>
+  <p class="lead mb-4 text-secondary">
+    Tecnologia inteligente, integração avançada e suporte técnico de alta
+    performance.
+  </p>
+  <a href="#servicos" class="btn btn-cyan btn-lg px-4">
+    Conheça nossos serviços
+  </a>
+</section>
 
+<hr class="divider my-5" />
+
+<!-- Sobre -->
 <section id="sobre" class="mb-5">
-  <h2 class="text-center mb-4">Sobre a Empresa</h2>
-  <p class="text-center">
-    Somos especialistas em integração de sistemas, automação de processos e
-    consultoria em TI. Nosso objetivo é otimizar operações e aumentar a
-    eficiência tecnológica da sua empresa.
+  <h2 class="text-center mb-4 text-cyan">Sobre a BonTech</h2>
+  <p class="text-center mx-auto" style="max-width: 800px;">
+    A
+    <strong>BonTech</strong>
+    é especializada em
+    <em>integração de sistemas, automação de processos e helpdesk técnico</em>.
+    Nossa missão é impulsionar empresas com soluções tecnológicas inteligentes,
+    escaláveis e seguras.
   </p>
 </section>
 
+<hr class="divider my-5" />
+
+<!-- Serviços -->
 <section id="servicos" class="mb-5">
-  <h2 class="text-center mb-4">Nossos Serviços</h2>
+  <h2 class="text-center mb-5 text-cyan">Nossos Serviços</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="card h-100 text-center shadow-sm">
-        <div class="card-body">
-          <i class="bi bi-pc-display mb-3" style="font-size: 2rem;"></i>
-          <h5 class="card-title">Integração de Sistemas</h5>
-          <p class="card-text">Conectamos diferentes sistemas para otimizar
-            processos e reduzir retrabalho.</p>
-        </div>
+      <div class="card service-card h-100 text-center p-3">
+        <i class="bi bi-pc-display mb-3" style="font-size: 2.5rem;"></i>
+        <h5 class="fw-semibold">Integração de Sistemas</h5>
+        <p>Conectamos plataformas e automações para criar ecossistemas
+          tecnológicos eficientes.</p>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100 text-center shadow-sm">
-        <div class="card-body">
-          <i class="bi bi-gear-fill mb-3" style="font-size: 2rem;"></i>
-          <h5 class="card-title">Automação de Processos</h5>
-          <p class="card-text">Automatizamos tarefas repetitivas para ganhar
-            eficiência e segurança.</p>
-        </div>
+      <div class="card service-card h-100 text-center p-3">
+        <i
+          class="bi bi-gear-wide-connected mb-3"
+          style="font-size: 2.5rem;"
+        ></i>
+        <h5 class="fw-semibold">Automação Inteligente</h5>
+        <p>Eliminamos tarefas repetitivas com fluxos automatizados e
+          inteligência operacional.</p>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100 text-center shadow-sm">
-        <div class="card-body">
-          <i class="bi bi-cloud-fill mb-3" style="font-size: 2rem;"></i>
-          <h5 class="card-title">Consultoria em TI</h5>
-          <p class="card-text">Oferecemos consultoria estratégica para projetos
-            de tecnologia da informação.</p>
-        </div>
+      <div class="card service-card h-100 text-center p-3">
+        <i class="bi bi-headset mb-3" style="font-size: 2.5rem;"></i>
+        <h5 class="fw-semibold">Helpdesk e Suporte</h5>
+        <p>Atendimento técnico ágil, seguro e humanizado para manter sua
+          infraestrutura no ar.</p>
       </div>
     </div>
   </div>
 </section>
 
+<hr class="divider my-5" />
+
+<!-- Contato -->
 <section id="contato" class="mb-5">
-  <h2 class="text-center mb-4">Fale Conosco</h2>
+  <h2 class="text-center mb-4 text-cyan">Fale Conosco</h2>
 
   {{#if sucesso}}
     <div class="alert alert-success text-center" role="alert">
@@ -60,38 +77,38 @@
 
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <form action="/contato" method="POST">
+      <form action="/contato" method="POST" class="glass-form p-4 rounded">
         <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
+          <label for="nome" class="form-label text-cyan">Nome</label>
           <input
             type="text"
-            class="form-control"
+            class="form-control bg-dark text-light border-cyan"
             id="nome"
             name="nome"
             required
           />
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
+          <label for="email" class="form-label text-cyan">E-mail</label>
           <input
             type="email"
-            class="form-control"
+            class="form-control bg-dark text-light border-cyan"
             id="email"
             name="email"
             required
           />
         </div>
         <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
+          <label for="mensagem" class="form-label text-cyan">Mensagem</label>
           <textarea
-            class="form-control"
+            class="form-control bg-dark text-light border-cyan"
             id="mensagem"
             name="mensagem"
             rows="5"
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        <button type="submit" class="btn btn-cyan w-100 py-2">Enviar</button>
       </form>
     </div>
   </div>

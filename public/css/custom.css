@@ -3,8 +3,72 @@
 }
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 section {
   padding: 2rem 0;
+}
+
+/* ====== BonTech Dark Futurista ====== */
+body {
+  background: radial-gradient(circle at top left, #0a0a12, #080818, #03030a);
+  color: #d0d0e1;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.text-cyan {
+  color: #00e0ff !important;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00e0ff, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-cyan {
+  background: linear-gradient(90deg, #00e0ff, #007bff);
+  border: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.btn-cyan:hover {
+  background: linear-gradient(90deg, #00b5cc, #005fcc);
+  transform: scale(1.03);
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 224, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #00e0ff;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.2);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 30, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 224, 255, 0.2);
+}
+
+.glass-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 224, 255, 0.2);
+}
+
+.border-cyan {
+  border: 1px solid rgba(0, 224, 255, 0.4) !important;
+}
+
+.footer-dark {
+  background: #0b0b15;
+  border-top: 1px solid rgba(0, 224, 255, 0.1);
+}
+
+.divider {
+  border-top: 1px solid rgba(0, 224, 255, 0.15);
+  margin: 3rem 0;
 }

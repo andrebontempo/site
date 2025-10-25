@@ -1,40 +1,65 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{title}}</title>
-<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/custom.css">
-<link rel="stylesheet" href="/css/bootstrap-icons.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+  </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="/">Minha Empresa</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <body class="d-flex flex-column min-vh-100 bg-dark text-light">
 
-<main class="container my-5 flex-grow-1">
-  {{{body}}}
-</main>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <i class="bi bi-cpu me-2 text-cyan" style="font-size:1.8rem;"></i>
+          <span class="fw-bold text-gradient">BonTech</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a
+                class="nav-link"
+                href="#sobre"
+              >Sobre</a></li>
+            <li class="nav-item"><a
+                class="nav-link"
+                href="#servicos"
+              >Serviços</a></li>
+            <li class="nav-item"><a
+                class="nav-link"
+                href="#contato"
+              >Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<footer class="bg-light text-center py-4 mt-auto">
-  <p class="mb-0">&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
-</footer>
+    <!-- Main -->
+    <main class="container flex-grow-1 py-5 mt-5">
+      {{{body}}}
+    </main>
 
-<script src="/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer-dark text-center py-4 mt-auto">
+      <p class="mb-0">&copy; 2025
+        <span class="text-cyan fw-semibold">BonTech</span>. Todos os direitos
+        reservados.</p>
+    </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
