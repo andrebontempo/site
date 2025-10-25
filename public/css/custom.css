@@ -1,74 +1,202 @@
-.card {
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-section {
-  padding: 2rem 0;
+/* ==========================================
+   BonTech Dark Futurista
+   Autor: André Bontempo
+   ========================================== */
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
 }
 
-/* ====== BonTech Dark Futurista ====== */
+/* Body */
 body {
   background: radial-gradient(circle at top left, #0a0a12, #080818, #03030a);
   color: #d0d0e1;
   font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
 }
 
+/* Text cyan */
 .text-cyan {
   color: #00e0ff !important;
 }
 
+/* Gradiente no texto */
 .text-gradient {
+  display: inline-block; /* essencial para clip */
   background: linear-gradient(90deg, #00e0ff, #6c63ff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent !important;
+  color: #00e0ff; /* fallback Firefox */
 }
 
-.btn-cyan {
-  background: linear-gradient(90deg, #00e0ff, #007bff);
-  border: none;
-  color: #fff;
-  transition: 0.3s ease;
-}
-.btn-cyan:hover {
-  background: linear-gradient(90deg, #00b5cc, #005fcc);
-  transform: scale(1.03);
-}
-
-.service-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 224, 255, 0.1);
-  transition: all 0.3s ease;
-}
-.service-card:hover {
-  transform: translateY(-5px);
-  border-color: #00e0ff;
-  box-shadow: 0 0 20px rgba(0, 224, 255, 0.2);
-}
-
+/* ============================
+   Navbar glass futurista
+   ============================ */
 .glass-nav {
   background: rgba(0, 0, 30, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 224, 255, 0.2);
 }
 
-.glass-form {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 224, 255, 0.2);
+.navbar-brand .bi {
+  color: #00e0ff;
+  font-size: 1.8rem;
 }
 
-.border-cyan {
-  border: 1px solid rgba(0, 224, 255, 0.4) !important;
+.navbar .nav-link {
+  color: #d0d0e1;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #00e0ff;
 }
 
-.footer-dark {
-  background: #0b0b15;
-  border-top: 1px solid rgba(0, 224, 255, 0.1);
+/* ============================
+   Hero section
+   ============================ */
+#hero {
+  padding: 5rem 1rem 3rem 1rem;
+  text-align: center;
 }
 
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  color: #a0a0b0;
+}
+
+/* ============================
+   Botões cyan
+   ============================ */
+.btn-cyan {
+  background: linear-gradient(90deg, #00e0ff, #007bff);
+  border: none;
+  color: #fff;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+.btn-cyan:hover {
+  background: linear-gradient(90deg, #00b5cc, #005fcc);
+  transform: scale(1.03);
+}
+
+/* ============================
+   Sections
+   ============================ */
+section {
+  padding: 3rem 0;
+}
+
+/* Divider */
 .divider {
   border-top: 1px solid rgba(0, 224, 255, 0.15);
   margin: 3rem 0;
+}
+
+/* ============================
+   Cards futuristas
+   ============================ */
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 224, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: default;
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #00e0ff;
+  transition: all 0.3s ease;
+}
+
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #b0b0c0;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #00e0ff;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.3);
+}
+
+.service-card:hover i {
+  color: #6c63ff;
+  transform: scale(1.2);
+}
+
+/* ============================
+   Forms
+   ============================ */
+.glass-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 224, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.glass-form input,
+.glass-form textarea {
+  background: #0a0a12;
+  color: #d0d0e1;
+  border: 1px solid rgba(0, 224, 255, 0.4);
+}
+
+.glass-form input:focus,
+.glass-form textarea:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.2);
+  outline: none;
+}
+
+.glass-form label {
+  color: #00e0ff;
+  font-weight: 500;
+}
+
+/* ============================
+   Footer
+   ============================ */
+.footer-dark {
+  background: #0b0b15;
+  border-top: 1px solid rgba(0, 224, 255, 0.1);
+  color: #d0d0e1;
+}
+
+.footer-dark .text-cyan {
+  font-weight: 600;
+}
+
+/* ============================
+   Cards e animações extras
+   ============================ */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   Extras (gradiente em hover nos links)
+   ============================ */
+a:hover {
+  color: #00e0ff;
+  text-decoration: none;
+  transition: 0.3s;
 }
